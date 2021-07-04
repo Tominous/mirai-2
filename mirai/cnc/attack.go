@@ -117,11 +117,10 @@ var flagInfoLookup map[string]FlagInfo = map[string]FlagInfo {
         22,
         "HTTP path, default is /",
     },
-    /*"ssl": FlagInfo {
+    "ssl": FlagInfo {
         23,
         "Use HTTPS/SSL"
     },
-    */
     "conns": FlagInfo {
         24,
         "Number of connections",
